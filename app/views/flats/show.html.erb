@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-7">
+      <div class="card text-dark shadow-sm border-light mb-3">
+        <div class="card-body bg-light">
+          <h1 class="card-title font-weight-bold"><%= @flat.name %></h1>
+          <h4 class="card-subtitle"><%= @flat.address %></h4>
+        </div>
+      </div>
+      <div class="card text-dark shadow-sm border-light mb-3">
+        <div class="card-body bg-light">
+          <h3>A bit more about this flat...</h3>
+          <p class="card-text"><%= @flat.description %></p>
+        </div>
+      </div>
+      <div class="card text-dark shadow-sm border-light mb-3">
+        <div class="card-body bg-light">
+          <h3>Details</h3>
+          <p class="card-text"><i class="fas fa-users"></i> <%= @flat.price_per_night %> <i class="pl-1 fas fa-euro-sign"></i> <%= @flat.price_per_night %></p>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card text-dark shadow-sm border-light mb-3">
+          <div class="card-body bg-light">
+            <h3>Book this place!</h3>
+            <p class="card-text"><%= @flat.description %></p>
+          </div>
+        </div>
+        <div class="card text-dark shadow-sm border-light mb-3">
+        <div class="card-body bg-light">
+          <h5>Share</h5>
+          <p class="card-text"><i class="fa fa-facebook-square fa-2x mr-2"></i>
+            <i class="fa fa-twitter-square fa-2x mr-2"></i>
+            <i class="fa fa-pinterest-square fa-2x mr-2"></i>
+            <i class="fa fa-envelope-square fa-2x"></i>
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

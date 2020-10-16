@@ -1,0 +1,19 @@
+<div class="pl-4 row">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <h1 class="text-dark">All our flats (<%= @flats.count %>)</h1>
+    <div class="mt-5 d-flex flex-row justify-content-between flex-wrap">
+      <% @flats.each do |flat| %>
+      <div class="card text-dark mt-2 mb-2 mr-2 shadow-sm border-light" style="width: 20rem;">
+        <div class="card-body bg-light">
+          <h3 class="card-title"><%= flat.name %></h3>
+          <p class="card-text text-muted"><%= flat.address %></p>
+          <p class="card-text"><i class="fas fa-users"></i> <%= flat.price_per_night %> <i class="pl-1 fas fa-euro-sign"></i> <%= flat.price_per_night %></p>
+        </div>
+        <div class="card-footer bg-white">
+            <%= link_to "+ info", flat_path(flat), class: "text-warning font-weight-bold" %>
+          </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
